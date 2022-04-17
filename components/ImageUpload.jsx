@@ -10,8 +10,7 @@ import {
 import { useRef, useState } from 'react';
 import ImagePreview from './ImagePreview';
 
-const ImageUpload = ({ max = 4 }) => {
-  const [files, setFiles] = useState([]);
+const ImageUpload = ({ max = 4, files, setFiles }) => {
   const [alert, setAlert] = useState('');
   const inputRef = useRef(null);
 
